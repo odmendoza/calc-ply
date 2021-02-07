@@ -1,17 +1,13 @@
-# calclex.py
-#
-# tokenizer for a simple expression evaluator for
-# numbers and +,-,*,/
-# ------------------------------------------------------------
 import ply.lex as lex
 
-# List of token names.   This is always required
+# List of token names. This is always required
 tokens = (
     'NUMBER',
     'PLUS',
     'MINUS',
     'TIMES',
     'DIVIDE',
+    'MOD',
     'LPAREN',
     'RPAREN',
 )
@@ -21,6 +17,7 @@ t_PLUS = r'\+'
 t_MINUS = r'-'
 t_TIMES = r'\*'
 t_DIVIDE = r'/'
+t_MOD = r'\%'
 t_LPAREN = r'\('
 t_RPAREN = r'\)'
 
